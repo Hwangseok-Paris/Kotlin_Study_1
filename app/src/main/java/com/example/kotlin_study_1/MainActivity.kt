@@ -15,13 +15,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val ars_image = findViewById<ImageView >(R.id.ars)
-        var liv_image = findViewById<ImageView>(R.id.liv)
+        val liv_image = findViewById<ImageView>(R.id.liv)
+        val rmd_image = findViewById<ImageView>(R.id.rmd)
+        val avl_image = findViewById<ImageView>(R.id.avl)
+
         ars_image.setOnClickListener {
             Toast.makeText(this, "아스날 우승!!", Toast.LENGTH_LONG).show()
 
-        val intent = Intent(this, EplLogo1::class.java)
+            val intent = Intent(this, EplLogo1::class.java)
             startActivity(intent)
-
+        }
 
         liv_image.setOnClickListener {
             Toast.makeText(this, "리버풀 3위!!!", Toast.LENGTH_LONG).show()
@@ -29,6 +32,21 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, EplLogo2::class.java)
             startActivity(intent)
         }
+
+        rmd_image.setOnClickListener {
+            Toast.makeText(this, "Real Madrid", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, EplLogo3::class.java)
+            startActivity(intent)
         }
+
+        avl_image.setOnClickListener {
+            Toast.makeText(this, "아스톤빌라", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, EplLogo4::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

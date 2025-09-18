@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study_1">
         <activity
+            android:name=".EplLogo4"
+            android:exported="false" />
+        <activity
+            android:name=".EplLogo3"
+            android:exported="false" />
+        <activity
             android:name=".EplLogo2"
             android:exported="false" />
         <activity
