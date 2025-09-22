@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Kotlin_Study_1"
 include(":app")
- 
+include(":listview")
+include(":backbutton")
+include(":goodwords")
