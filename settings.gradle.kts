@@ -23,3 +23,5 @@ rootProject.name = "Kotlin_Study_1"
 include(":app")
 include(":twice")
 include(":databinding_ex")
+include(":databinding")
+include(":custom_font")
