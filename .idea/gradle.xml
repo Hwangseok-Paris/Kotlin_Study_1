@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/backbutton" />
             <option value="$PROJECT_DIR$/goodwords" />
             <option value="$PROJECT_DIR$/listview" />
+            <option value="$PROJECT_DIR$/listview_second" />
           </set>
         </option>
       </GradleProjectSettings>
