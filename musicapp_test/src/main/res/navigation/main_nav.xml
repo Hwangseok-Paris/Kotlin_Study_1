@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/artist1Fragment">
+
+    <fragment
+        android:id="@+id/artist1Fragment"
+        android:name="com.example.musicapp_test.Artist1Fragment"
+        android:label="fragment_artist1"
+        tools:layout="@layout/fragment_artist1" >
+        <action
+            android:id="@+id/action_artist1Fragment_to_artist2Fragment"
+            app:destination="@id/artist2Fragment" />
+        <action
+            android:id="@+id/action_artist1Fragment_to_artist3Fragment"
+            app:destination="@id/artist3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artist2Fragment"
+        android:name="com.example.musicapp_test.Artist2Fragment"
+        android:label="fragment_artist2"
+        tools:layout="@layout/fragment_artist2" >
+        <action
+            android:id="@+id/action_artist2Fragment_to_artist3Fragment"
+            app:destination="@id/artist3Fragment" />
+        <action
+            android:id="@+id/action_artist2Fragment_to_artist1Fragment"
+            app:destination="@id/artist1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artist3Fragment"
+        android:name="com.example.musicapp_test.Artist3Fragment"
+        android:label="fragment_artist3"
+        tools:layout="@layout/fragment_artist3" >
+        <action
+            android:id="@+id/action_artist3Fragment_to_artist2Fragment"
+            app:destination="@id/artist2Fragment" />
+        <action
+            android:id="@+id/action_artist3Fragment_to_artist1Fragment"
+            app:destination="@id/artist1Fragment" />
+    </fragment>
+</navigation>
